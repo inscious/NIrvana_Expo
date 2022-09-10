@@ -6,11 +6,11 @@ import navData from "../../assets/data/navData";
 
 const Navbar = () => {
     return (
-        <div className="fixed z-50 h-32 w-full bg-[#101010]/75 backdrop-blur-md duration-150 md:h-24 lg:h-16">
+        <div className="fixed z-50 h-32 w-full bg-[#101010]/75 backdrop-blur-lg duration-150 md:h-24 lg:h-16">
             <div className="relative mx-auto flex h-full max-w-7xl items-center justify-evenly">
                 {/* LOGO */}
                 <>
-                    <div className="absolute h-full left-auto lg:left-5">
+                    <div className="lg:left- absolute left-auto h-full">
                         <Link className="flex h-full items-center" to="/">
                             <svg
                                 id="Layer_1"
@@ -52,11 +52,14 @@ const Navbar = () => {
                     </div>
                     <>
                         <ul className="absolute right-0 hidden h-full items-center lg:flex">
-                            {navData.map((link) => {
+                            {navData.map((link, index) => {
                                 return (
-                                    <li className="hover:bg-slate-10 group flex h-full w-full items-center border-b-4 border-[#101010]/0 duration-150 hover:border-theme-yellow">
+                                    <li
+                                        key={index}
+                                        className="hover:bg-slate-10 group flex h-full w-full items-center border-b-4 border-[#101010]/0 duration-150 hover:border-theme-orange"
+                                    >
                                         <Link
-                                            className="flex h-full w-full items-center px-5 text-white duration-150 group-hover:text-theme-yellow"
+                                            className="flex h-full w-full items-center px-5 text-white duration-150 group-hover:text-theme-orange"
                                             to={link.url}
                                         >
                                             {link.title}
