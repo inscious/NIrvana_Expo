@@ -6,7 +6,7 @@
   <!-- <a href="https://nirvanaexpots.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Nirvana Expo Ts</h1>
+<h1 align="center">Nirvana Expo</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/inscious/nirvana-expo-ts?color=56BEB8">
